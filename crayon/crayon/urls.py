@@ -1,7 +1,8 @@
-from django.urls import path
-from .views import VilleDetailView
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('villes/<int:pk>/', VilleDetailView.as_view(), name='ville-detail'),
-    # ... autres routes
+    path('admin/', admin.site.urls),
+    path('', include('high_level.urls')),  # Inclure les URLs de l'application
 ]
+
