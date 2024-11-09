@@ -33,7 +33,11 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/soufiane/Téléchargements/tp_coo/tp_coo/venv"
+=======
+set -gx VIRTUAL_ENV "/home/soufiane/Téléchargements/tp_coo/tp_coo/crayon/venv"
+>>>>>>> f814eff4 (final_prj)
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
