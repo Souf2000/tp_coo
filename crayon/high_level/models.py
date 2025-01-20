@@ -212,3 +212,4 @@ def acheter_stocks(usine, recette):
         else:
             # Si aucun stock, acheter la quantité nécessaire
             Stock.objects.create(ressource=ingredient.ressource, nombre=ingredient.quantite)
+# test
