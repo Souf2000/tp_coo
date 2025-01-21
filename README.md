@@ -1,6 +1,6 @@
 # TP COO - Documentation LAHLALI Soufiane
 
-Bienvenue dans le projet **TP COO** réalisé par **Soufiane LAHLALI** dans le cadre des cours à l'Université Toulouse III - Paul Sabatier.
+Bienvenue dans le projet **TP COO** réalisé par **Soufiane LAHLALI** dans le cadre des cours à l'Université Toulouse III.
 
 **Auteur** : Soufiane LAHLALI  
 **Email** : [soufiane.lahali@univ-tlse3.fr](mailto:soufiane.lahali@univ-tlse3.fr)  
