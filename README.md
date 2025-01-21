@@ -6,17 +6,18 @@ Bienvenue dans le projet **TP COO** réalisé par **Soufiane LAHLALI** dans le c
 **Email** : [soufiane.lahali@univ-tlse3.fr](mailto:soufiane.lahali@univ-tlse3.fr)  
 **Licence** : Licence `tp_coo`  
 **URL de documentation** : [Documentation locale](http://localhost:8000/docs/)  
+
 **URL des classes** :
 
-- [Villes](http://localhost:8000/api/villes/)
-- [Machines](http://localhost:8000/api/machines/)
-- [Usines](http://localhost:8000/api/usines/)
-- [Ressources](http://localhost:8000/api/ressources/)
-- [Stocks](http://localhost:8000/api/stocks/)
-- [Quantités de Ressources](http://localhost:8000/api/quantites_ressources/)
-- [Étapes](http://localhost:8000/api/etapes/)
-- [Produits](http://localhost:8000/api/produits/)
-- [Recettes](http://localhost:8000/api/recettes/)
+- [Villes](http://localhost:8000/api/villes/) ([JSON](http://localhost:8000/api/villes/?format=json))
+- [Machines](http://localhost:8000/api/machines/) ([JSON](http://localhost:8000/api/machines/?format=json))
+- [Usines](http://localhost:8000/api/usines/) ([JSON](http://localhost:8000/api/usines/?format=json))
+- [Ressources](http://localhost:8000/api/ressources/) ([JSON](http://localhost:8000/api/ressources/?format=json))
+- [Stocks](http://localhost:8000/api/stocks/) ([JSON](http://localhost:8000/api/stocks/?format=json))
+- [Quantités de Ressources](http://localhost:8000/api/quantites_ressources/) ([JSON](http://localhost:8000/api/quantites_ressources/?format=json))
+- [Etapes](http://localhost:8000/api/etapes/) ([JSON](http://localhost:8000/api/etapes/?format=json))
+- [Produits](http://localhost:8000/api/produits/) ([JSON](http://localhost:8000/api/produits/?format=json))
+- [Recettes](http://localhost:8000/api/recettes/) ([JSON](http://localhost:8000/api/recettes/?format=json))
 
 ---
 
@@ -33,14 +34,12 @@ Le projet est divisé en plusieurs parties :
 
 ## Contenu du projet
 
-### Partie C++
-- **low_level/**
+- **low_level/** : Contient les fichiers pour la partie C++.
   - `main.cpp`, `Ville.cpp`, `Objet.cpp`, `Local.cpp`, `SiegeSocial.cpp`
   - `Makefile` pour compiler le projet
   - Dépendances : CPR, nlohmann/json
 
-### Partie Django
-- **crayon/**
+- **crayon/** : Application Django.
   - `manage.py` : Gestion de l'application
   - `high_level/` : Code source pour les modèles, vues et serializers
   - `urls.py` : Configuration des routes
@@ -66,75 +65,55 @@ Le projet est divisé en plusieurs parties :
 ## Installation
 
 ### Partie C++
-
 1. Clonez le projet :
    ```bash
    git clone https://github.com/Souf2000/tp_coo.git
    cd tp_coo/low_level
    ```
-
-2. Installez les dépendances nécessaires :
-   ```bash
-   sudo apt update
-   sudo apt install g++ cmake libcurl4-openssl-dev
-   git clone https://github.com/libcpr/cpr.git
-   cd cpr && mkdir build && cd build
-   cmake ..
-   make
-   sudo make install
-   ```
-
+2. Installez les bibliothèques nécessaires (CPR et nlohmann/json).
 3. Compilez le projet :
    ```bash
-   cd ~/téléchargements/tp_coo/low_level
    make
    ```
-
-4. Exécutez le programme :
+4. Exécutez le binaire généré :
    ```bash
    ./main
    ```
 
 ### Partie Django
-
-1. Naviguez dans le dossier de l'application Django :
+1. Accédez au répertoire de l'application Django :
    ```bash
    cd tp_coo/crayon
    ```
-
-2. Créez un environnement virtuel et activez-le :
+2. Activez l'environnement virtuel :
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate
+   source ../venv/bin/activate
    ```
-
-3. Installez les dépendances :
+3. Installez les dépendances Python :
    ```bash
    pip install -r requirements.txt
    ```
-
-4. Appliquez les migrations :
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-   ```
-
-5. Lancez le serveur :
+4. Lancez le serveur de développement :
    ```bash
    python manage.py runserver
    ```
+5. Accédez à l'application via votre navigateur : [http://localhost:8000](http://localhost:8000)
 
 ---
 
-## Fonctionnalités
+## Fonctionnalités principales
 
-- Gestion des entités : villes, objets, locaux, sièges sociaux, etc.
-- API REST pour interagir avec les données.
-- Documentation interactive avec Swagger et ReDoc.
+1. Gestion des entités (villes, machines, usines, etc.) via une interface utilisateur et une API REST.
+2. Documentation automatique des endpoints via Swagger et ReDoc.
+3. Exemples d'implémentation en C++ avec des interactions HTTP.
 
 ---
 
 ## Auteur
 
-**Soufiane LAHLALI**  
-**Email** : [soufiane.lahali@univ-tlse3.fr](mailto:soufiane.lahali@univ-tlse3.fr)
+Soufiane LAHLALI  
+[soufiane.lahali@univ-tlse3.fr](mailto:soufiane.lahali@univ-tlse3.fr)
+
+---
+
+*Ce projet est réalisé dans le cadre de la formation en programmation orientée objet à l'Université Toulouse III - Paul Sabatier.*
